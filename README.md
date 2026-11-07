@@ -46,7 +46,7 @@ Meeting recorder plugin for [DeepSeek Harness](https://github.com/deepseek-ai/de
 | 步骤 | 谁来做 |
 | --- | --- |
 | 把插件登记进 Harness | 你执行 `dsh plugin add`，或在插件页安装 |
-| 创建 venv、安装 torch 与 FunASR 依赖 | `scripts/setup.*`，或插件里的「安装引擎依赖」 |
+| 创建 venv、安装 torch 与 FunASR 依赖 | `scripts/setup.*`，或插件里的「只安装依赖」 |
 | 下载约 2GB+ 模型 | 只有你不加 `--skip-models` / 不点「只安装依赖」时才会下载。插件按钮默认**不**下载。第一次转写也可能再试一次 |
 | 现场录音、调用 Harness 大模型写纪要 | 依赖装好并且 Harness 已配置模型之后，在界面里操作 |
 
@@ -212,7 +212,7 @@ Then install this same directory and fully quit Harness:
 npx -y @deepseek-ai/dsh plugin --profile web add .
 ```
 
-Use `desktop` instead of `web` for the desktop app. If Harness copied the plugin without `.venv`, open Meeting Recorder and use **Install engine dependencies**. That button runs only the bundled setup script in the loaded plugin directory.
+Use `desktop` instead of `web` for the desktop app. If Harness copied the plugin without `.venv`, open Meeting Recorder and press **只安装依赖**. The model download button is **安装依赖并下载模型**. Both run only the bundled setup script in the loaded plugin directory.
 
 `dsh plugin add github:luczhang88-lang/dsh-meeting-recorder` installs the plugin code only. Run setup in the loaded copy, or use the button. Do not point a second clone at it.
 

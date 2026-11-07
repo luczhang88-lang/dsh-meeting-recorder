@@ -1120,7 +1120,7 @@ export class MeetingRecorder {
         python,
         error:
           `找不到语音引擎的 Python 解释器：${python}。` +
-          '请在插件里点「安装引擎依赖」，或在下面这个插件目录运行 scripts/setup。不要在另一份克隆里安装后指望这里能看到。',
+          `请在插件里点「只安装依赖」，或在插件目录 ${PLUGIN_ROOT} 运行 scripts/setup。不要在另一份克隆里安装后指望这里能看到。`,
       };
     }
 

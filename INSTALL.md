@@ -45,7 +45,7 @@ npx -y @deepseek-ai/dsh plugin --profile web add .
 
 桌面版把 `web` 换成 `desktop`。完全退出并重启 Harness，再打开「会议录音」。
 
-如果 Harness 复制插件时丢掉了 `.venv`，以界面上显示的插件目录为准，点「安装引擎依赖」。那个按钮默认不下载模型；另有一个按钮才会下载约 2GB+ 权重，并显示脚本输出和退出码。
+如果 Harness 复制插件时丢掉了 `.venv`，以界面上显示的插件目录为准。点「只安装依赖」不会下载模型；点「安装依赖并下载模型」才会下载约 2GB+ 权重。页面显示脚本输出和退出码。
 
 ## 从 GitHub 规格安装
 
@@ -98,7 +98,7 @@ macOS installs torch from PyPI. Linux and Windows use the PyTorch CPU index. The
 npx -y @deepseek-ai/dsh plugin --profile web add .
 ```
 
-Fully quit and restart Harness. If the loaded copy has no `.venv`, use **Install engine dependencies** in Meeting Recorder. That action does not download models unless you press the separate download button.
+Fully quit and restart Harness. If the loaded copy has no `.venv`, open Meeting Recorder and press **只安装依赖**. Press **安装依赖并下载模型** only when you want the about-2GB download. The page shows the script output and exit code.
 
 GitHub install loads code only:
 
