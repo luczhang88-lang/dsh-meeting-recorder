@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="会议录音与纪要">
+  <defs>
+    <linearGradient id="mr-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3d8bfd"/>
+      <stop offset="1" stop-color="#1f5fd0"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#mr-bg)"/>
+
+  <!-- 话筒头 -->
+  <rect x="25" y="12" width="14" height="24" rx="7" fill="#ffffff"/>
+  <!-- 话筒架 -->
+  <path d="M18 30a14 14 0 0 0 28 0" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <!-- 支架 -->
+  <path d="M32 44v6" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M25 52h14" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- 右侧声波：表示"转成文字" -->
+  <path d="M47 24h3M47 31h6M47 38h3" fill="none" stroke="#cfe2ff" stroke-width="3" stroke-linecap="round"/>
+</svg>

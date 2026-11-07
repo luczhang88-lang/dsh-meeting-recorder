@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Meeting Recorder",
+    "description": "Records meetings with the local microphone, separates speakers, transcribes to text, and produces Word transcripts plus formatted meeting minutes."
+  }
+}

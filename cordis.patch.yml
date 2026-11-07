@@ -1,0 +1,22 @@
+# 会议录音插件：一个 Host 半边 + 一个 Client 半边。
+# Client 半边由 package.json 的 dsh.client 声明。
+#
+# 默认路径（仍须先完成本机 setup，装上插件不会自带 .venv 或模型）：
+#   engineRoot     -> 本包内 engine/（与正在运行的插件文件同一目录）
+#   modelCacheDir  -> engine/models/
+#   pythonPath     -> engine/.venv 内解释器
+# 仍可用环境变量覆盖：
+#   MEETING_RECORDER_ENGINE_ROOT / DSH_SPEECH_ENGINE_ROOT
+#   MEETING_RECORDER_MODEL_CACHE / MODELSCOPE_CACHE
+#   MEETING_RECORDER_MEETINGS_ROOT
+#   MEETING_RECORDER_PYTHON
+# 覆盖 engineRoot 之后，插件界面里的安装按钮不会改那个外部目录。
+- insert:
+    - id: meeting-recorder
+      name: dsh-meeting-recorder
+      config:
+        engineRoot: ''
+        modelCacheDir: ''
+        meetingsRoot: ''
+        defaultOutputDir: ''
+        pythonPath: ''
