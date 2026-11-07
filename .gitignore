@@ -1,0 +1,28 @@
+node_modules/
+.DS_Store
+*.log
+.idea/
+.vscode/
+
+# engine runtime (created by scripts/setup.*)
+engine/.venv/
+engine/models/
+engine/**/__pycache__/
+engine/**/*.pyc
+__pycache__/
+*.pyc
+.venv/
+
+# local data, secrets, and generated audio — never publish these
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.ogg
+*.docx
+test-output/

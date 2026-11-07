@@ -1,0 +1,40 @@
+{
+  "name": "dsh-meeting-recorder",
+  "title": {
+    "en": "Meeting Recorder (local FunASR)",
+    "zh": "会议录音与纪要（本机 FunASR）"
+  },
+  "description": {
+    "en": "Local mic/import recording, FunASR transcription, speaker diarization, Word transcripts and minutes for DeepSeek Harness.",
+    "zh": "本机麦克风或导入录音、FunASR 转写、说话人分离、Word 讲话稿与会议纪要。"
+  },
+  "homepage": "https://github.com/luczhang88-lang/dsh-meeting-recorder",
+  "repository": {
+    "url": "https://github.com/luczhang88-lang/dsh-meeting-recorder"
+  },
+  "metadata": {
+    "category": "voice",
+    "keywords": [
+      "meeting",
+      "asr",
+      "funasr",
+      "recorder",
+      "transcription"
+    ],
+    "labels": [],
+    "sortKeys": {}
+  },
+  "versions": [
+    {
+      "version": "0.3.0",
+      "publishTimestamp": 1794023065,
+      "source": {
+        "type": "github",
+        "repo": "luczhang88-lang/dsh-meeting-recorder"
+      },
+      "engines": {
+        "dsh": ">=0.2.0-rc.1 <0.3.0"
+      }
+    }
+  ]
+}

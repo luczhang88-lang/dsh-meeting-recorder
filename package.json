@@ -1,0 +1,84 @@
+{
+  "name": "dsh-meeting-recorder",
+  "version": "0.3.0",
+  "description": "会议录音+本机 FunASR 引擎舱：现场/导入、转写、说话人校对、Word 纪要。Meeting recorder with bundled speech-engine for DeepSeek Harness.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Luc Zhang",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "deepseek",
+    "meeting",
+    "asr",
+    "funasr",
+    "transcription",
+    "recorder",
+    "cordis",
+    "github"
+  ],
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.0-rc.1 <0.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luczhang88-lang/dsh-meeting-recorder.git"
+  },
+  "homepage": "https://github.com/luczhang88-lang/dsh-meeting-recorder",
+  "bugs": {
+    "url": "https://github.com/luczhang88-lang/dsh-meeting-recorder/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "host/recorder.js",
+    "host/jobs.js",
+    "host/deliverables.js",
+    "host/transport.js",
+    "host/paths.js",
+    "host/engine-setup.js",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY.md",
+    "INSTALL.md",
+    "engine/speech_engine/**/*.py",
+    "engine/requirements.txt",
+    "engine/README.md",
+    "engine/.gitignore",
+    "scripts/setup.ps1",
+    "scripts/setup.cmd",
+    "scripts/setup.sh"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}
